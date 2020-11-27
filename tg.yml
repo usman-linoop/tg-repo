@@ -1,0 +1,12 @@
+---
+- name: adding user
+  hosts: all
+  tasks:
+    - name: adding user
+      user:
+        name: aa
+        state: present
+    - name: deleting user
+      user:
+        name: aa
+        state: absent
